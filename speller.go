@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/akhenakh/hunspellgo"
+	"github.com/pinheiroalexandre2/hunspellgo"
 	"github.com/trustmaster/go-aspell"
 )
 
@@ -63,6 +63,7 @@ type hunspeller struct {
 var hunspellPaths = []string{
 	"/usr/share/myspell",
 	"/usr/share/hunspell",
+	"/Library/Spelling",
 }
 
 func NewHunSpeller() Speller {
