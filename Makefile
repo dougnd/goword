@@ -14,3 +14,6 @@ test: test.out
 
 test.out: goword $(TESTSRCS)
 	go test -tags spell -v >$@ 2>&1 || cat $@
+
+install: goword
+	go install -tags spell -v
