@@ -86,6 +86,9 @@ func checkGoDoc(tch <-chan *Lexeme, outc chan<- *CheckedLexeme) {
 		if ll[len(ll)-2].tok == token.IDENT {
 			cmplex = ll[len(ll)-2]
 		}
+		if (fields[1] == "A" || fields[1] == "An") && fields[2] == cmplex.lit {
+			continue
+		}
 		if fields[1] == cmplex.lit {
 			continue
 		}
