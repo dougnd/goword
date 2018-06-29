@@ -55,6 +55,12 @@ func checkGoDoc(tch <-chan *Lexeme, outc chan<- *CheckedLexeme) {
 			continue
 		}
 
+		// is the comment a go-swagger comment? If so ignore.
+		// len("swagger") == 7
+		if len(fields[1]) >= 7 && fields[1][:7] == "swagger" {
+			continue
+		}
+
 		// check package
 		if ll[len(ll)-2].tok == token.PACKAGE {
 			if ll[len(ll)-1].lit == "main" {
