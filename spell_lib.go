@@ -106,7 +106,7 @@ func (sc *Spellcheck) tokenize(s string) []string {
 		";", ")", "(", "/", ":", "=",
 		"*", "-", ">", "]", "[", "_",
 		"|", "{", "}", "+", "\t", "' ",
-		" '", "&", "<", "'s "}
+		" '", "&", "<", "'s"}
 	for _, v := range x {
 		s = strings.Replace(s, v, " ", -1)
 	}

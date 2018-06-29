@@ -35,6 +35,7 @@ func GoTokens(srcpaths []string) (toks TokenSet, err error) {
 		if curToks := <-tokc; curToks != nil {
 			for _, tok := range curToks {
 				toks[tok] = struct{}{}
+				toks[tok+"s"] = struct{}{}
 			}
 		}
 		if curErr := <-errc; curErr != nil {
@@ -65,7 +66,7 @@ func fileTokens(tf *token.File) (toks []string, err error) {
 		tokmap[lit] = struct{}{}
 	}
 
-	for k, _ := range tokmap {
+	for k := range tokmap {
 		toks = append(toks, k)
 	}
 	return toks, nil
