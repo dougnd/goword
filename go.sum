@@ -1,0 +1,4 @@
+github.com/dougnd/hunspellgo v1.0.0 h1:Xws8whxMiISdgZ4i98EK46Ib7vYxCIkSgtkTJouuXWY=
+github.com/dougnd/hunspellgo v1.0.0/go.mod h1:+jGkv4iaC4YI9FsmuZHL4iyecclIR//w9/o8iy/74lg=
+github.com/trustmaster/go-aspell v0.0.0-20140221192225-b1cc0c2c49f8 h1:4cWbhCQAOFfUkcx+BDXPikhcjCQk721Z0zXpjGgvDY0=
+github.com/trustmaster/go-aspell v0.0.0-20140221192225-b1cc0c2c49f8/go.mod h1:wxUiQ1klFJmwnM41kQI7IT2g8jjOKbtuL54LdjkxAI0=

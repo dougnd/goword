@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/pinheiroalexandre2/hunspellgo"
+	"github.com/dougnd/hunspellgo"
 	"github.com/trustmaster/go-aspell"
 )
 
